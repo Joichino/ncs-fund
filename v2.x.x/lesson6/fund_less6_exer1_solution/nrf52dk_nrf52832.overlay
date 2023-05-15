@@ -10,3 +10,11 @@
 
 // For more help, browse the DeviceTree documentation at https://docs.zephyrproject.org/latest/guides/dts/index.html
 // You can also visit the nRF DeviceTree extension documentation at https://nrfconnect.github.io/vscode-nrf-connect/devicetree/nrfdevicetree.html
+
+&i2c0 {
+    mysensor: mysensor@4a{
+        compatible = "i2c-device";
+        status = "okay";
+        reg = < 0x4a >;
+    };
+};
